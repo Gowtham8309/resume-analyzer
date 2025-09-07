@@ -1,0 +1,25 @@
+:root { --maxw: 1040px; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #222; background: #fafafa; }
+.container { max-width: var(--maxw); margin: 24px auto; padding: 0 16px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.tab { padding: 10px 14px; border: 1px solid #ddd; background: #fff; border-radius: 8px; cursor: pointer; }
+.tab.active { background: #eef6ff; border-color: #bcd7ff; }
+.card { background: #fff; border: 1px solid #eaeaea; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); margin-bottom: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 12px; }
+.badge { display: inline-block; padding: 4px 8px; border-radius: 999px; background: #eef6ff; border: 1px solid #cbe2ff; font-size: 12px; }
+.table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #eaeaea; border-radius: 12px; overflow: hidden; }
+.table th, .table td { padding: 10px 12px; border-bottom: 1px solid #f1f1f1; text-align: left; }
+.table th { background: #f9fbff; }
+.btn { padding: 8px 12px; border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; }
+.btn.primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+.input { padding: 8px 10px; border: 1px solid #ddd; border-radius: 8px; width: 100%; }
+.modal {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.35);
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+}
+.modal > .sheet { max-width: 900px; width: 100%; max-height: 80vh; overflow: auto; background: #fff; padding: 16px; border-radius: 12px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { padding: 4px 8px; background: #f3f4f6; border-radius: 999px; border: 1px solid #e5e7eb; font-size: 12px; }
+.skeleton { height: 12px; background: linear-gradient(90deg,#eee,#f7f7f7,#eee); background-size: 200% 100%; animation: sh 1.2s infinite; border-radius: 6px; }
+@keyframes sh { 0%{background-position:200% 0} 100%{background-position:-200% 0} }

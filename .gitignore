@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+build/
+dist/
+
+# Env/keys
+*.env
+*.env.*.local
+backend/.env
+frontend/.env*
+!.env.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
